@@ -16,7 +16,7 @@ namespace Bonus17
             this.model = makeModel();
             this.year = makeYear();
             this.price = makePrice();
-            this.carInfo = make + " " + model + "   " + year + "    " + price;
+            this.carInfo = string.Format("{0,10}  {1,10}  {2,4}   {3,15}", make, model, year, price);
             Console.WriteLine(carInfo);
         }
 
